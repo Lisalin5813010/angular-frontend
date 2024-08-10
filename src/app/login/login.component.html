@@ -1,0 +1,29 @@
+<div class="col-md-6 offset-md-3">
+  <h3 class="text-center">Login</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label> Name </label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="user.name"
+        name="name"
+        id="name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label> password</label>
+      <input
+        type="password"
+        class="form-control"
+        [(ngModel)]="user.password"
+        name="password"
+        id="password"
+        required
+        visible="false"
+      />
+    </div>
+    <button class="btn btn-success" type="submit">Login</button>
+  </form>
+</div>
