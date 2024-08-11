@@ -1,4 +1,4 @@
-# AngularFrontend
+# AngularFrontend with CRUD operations and JWT
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
 
@@ -22,6 +22,34 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+## screenshots
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Authorisation System(Use JWT)
+
+<div align="center">
+    <img src="src/assets/images/login.png" width="70%" />
+</div>
+
+## Employee Table
+
+<div align="center">
+    <img src="src/assets/images/employeetable.png" width="70%" />
+</div>
+
+## Create Employee
+
+<div align="center">
+    <img src="src/assets/images/createemployee.png" width="70%" />
+</div>
+
+## Update Employee
+
+<div align="center">
+    <img src="src/assets/images/updateemployee.png" width="70%" />
+</div>
+
+## View Employee
+
+<div align="center">
+    <img src="src/assets/images/view.png" width="70%" />
+</div>
