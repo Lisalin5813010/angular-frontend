@@ -9,4 +9,13 @@
   <div>
     <label> <b>Email Id:</b> </label>{{ employee.emailId }}
   </div>
+  <div>
+    <label> <b>Preview:</b> </label>
+    <img
+      *ngIf="employee.imageUrl"
+      [src]="employee.imageUrl"
+      width="100px"
+      height="80px"
+    />
+  </div>
 </div>

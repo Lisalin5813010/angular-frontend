@@ -21,6 +21,8 @@ export class EmployeeListComponent implements OnInit {
   private getEmployees() {
     this.employeeService.getEmployeesList().subscribe((data) => {
       this.employees = data;
+      //console.log('employee.imageUrl: ', employee.imageUrl);
+      console.log(this.employees);
     });
   }
   employeeDetails(id: number) {
@@ -35,6 +37,5 @@ export class EmployeeListComponent implements OnInit {
       this.getEmployees();
     });
   }
-
   onFileSelected(event: any, employeeId: number) {}
 }

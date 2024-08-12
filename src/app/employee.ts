@@ -4,5 +4,6 @@ export class Employee {
   lastName: string = '';
   emailId: string = '';
   password: string = '';
+  imageName: string = '';
   imageUrl: string = '';
 }

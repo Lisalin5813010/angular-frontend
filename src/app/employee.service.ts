@@ -29,4 +29,10 @@ export class EmployeeService {
       responseType: 'text',
     });
   }
+  uploadImage(formData: FormData): Observable<Object> {
+    return this.httpClient.post(
+      'http://localhost:8081/api/v1/files/upload',
+      formData
+    );
+  }
 }

@@ -5,8 +5,7 @@
       <th>Last Name</th>
       <th>Email Id</th>
       <th>Actions</th>
-      <th>Profile Picture</th>
-      <!-- 添加图片预览列 -->
+      <th>Preview</th>
     </tr>
   </thead>
   <tbody>
@@ -14,6 +13,7 @@
       <td>{{ employee.firstName }}</td>
       <td>{{ employee.lastName }}</td>
       <td>{{ employee.emailId }}</td>
+
       <td>
         <button (click)="updateEmployee(employee.id)" class="btn btn-info">
           Update
@@ -34,12 +34,11 @@
         </button>
       </td>
       <td>
-        <input type="file" (change)="onFileSelected($event, employee.id)" />
         <img
           *ngIf="employee.imageUrl"
           [src]="employee.imageUrl"
-          alt="Profile Picture"
-          width="100"
+          width="100px"
+          height="80px"
         />
       </td>
     </tr>
